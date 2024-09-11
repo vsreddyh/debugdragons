@@ -13,7 +13,7 @@ require('dotenv').config();
 const { SESSION_KEY, url } = require('./settings/env.js');
 app.use(
     cors({
-        origin: process.env.NODE_ENV === 'production' ? 'https://schedio-coral.vercel.app' : '*',
+        origin:'*',
         credentials: true,
     })
 );
